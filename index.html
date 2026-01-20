@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Modern C++ - Complete Course</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: #ff6b6b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+            background: #ff5252;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #667eea;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature-card {
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .curriculum {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 10px;
+        }
+        
+        .curriculum ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .curriculum li {
+            padding: 15px;
+            margin: 10px 0;
+            background: white;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+        }
+        
+        .email-signup {
+            background: #667eea;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .email-signup h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .email-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .email-form input {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        
+        .email-form button {
+            padding: 15px 30px;
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            
+            .email-form {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>🚀 Mastering Modern C++</h1>
+        <p>Learn C++11/14/17/20 through hands-on projects and real-world applications</p>
+        <a href="YOUR_UDEMY_COURSE_LINK" class="cta-button" target="_blank">Enroll Now on Udemy</a>
+    </div>
+
+    <!-- What You'll Learn Section -->
+    <div class="container">
+        <div class="section">
+            <h2>What You'll Build</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>💰 Finance Tracker</h3>
+                    <p>Build a complete personal finance application from scratch, mastering OOP concepts along the way.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎯 Modern C++ Features</h3>
+                    <p>Learn smart pointers, lambda expressions, move semantics, and other C++11/14/17/20 features.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 Real-World Projects</h3>
+                    <p>Work on practical projects that demonstrate industry best practices and design patterns.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Curriculum Section -->
+        <div class="section">
+            <h2>Course Curriculum</h2>
+            <div class="curriculum">
+                <ul>
+                    <li>✓ C++ Fundamentals: Data Types, Control Flow, and Functions</li>
+                    <li>✓ Memory Management: Pointers, References, and Smart Pointers</li>
+                    <li>✓ Object-Oriented Programming: Classes, Inheritance, Polymorphism</li>
+                    <li>✓ Operator Overloading and Advanced OOP Concepts</li>
+                    <li>✓ File I/O and Data Persistence</li>
+                    <li>✓ STL: Containers, Iterators, and Algorithms</li>
+                    <li>✓ Modern C++ Features: Auto, Range-based Loops, Lambda Functions</li>
+                    <li>✓ Design Patterns and Best Practices</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Why This Course Section -->
+        <div class="section">
+            <h2>Why This Course?</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>📖 Incremental Learning</h3>
+                    <p>Each version builds on the previous, showing you exactly how and why to use each C++ feature.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💻 Hands-On Practice</h3>
+                    <p>Code along with every lesson and build a complete application by the end of the course.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎓 Expert Instruction</h3>
+                    <p>Learn from detailed explanations and real-world examples that make complex concepts clear.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Email Signup Section -->
+    <div class="email-signup">
+        <h2>Get Free C++ Resources</h2>
+        <p>Join 1,000+ developers receiving weekly C++ tips and tutorials</p>
+        <form class="email-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Get Free Guide</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mastering Modern C++. All rights reserved.</p>
+        <p>Contact: your-email@example.com</p>
+    </footer>
+</body>
+</html>
